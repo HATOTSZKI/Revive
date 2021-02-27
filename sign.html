@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+      
+        <link rel="stylesheet" href="https://use.typekit.net/rwq3huh.css">
+
+        <style>
+            body {
+                background-image: url("assets/background/Registration Background.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+    function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/8677/",
+            type:"post",
+            data:$("#registrationForm").serializeArray(),
+                success: function(){
+                    alert("CONGRATULATIONS!!! YOU'RE OFFICIALLY PART OF REVIVE! We'll get in touch with you via email!");
+                    window.location.href = "Home.html"
+                },
+                error: function(){
+                    alert("There was an error")
+                }
+        });
+    };
+
+    
+</script>
+<script src="script.js"></script>
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+    body {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(original.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: sans-serif;
+        margin-top: 40px;
+        color: white;
+    }
+
+    .regform{
+        width: 800px;
+        background-color: rgb(0,0,0,0.6);
+        margin:auto;
+        color:#ffffff;
+        padding: 10px 0px 10px 0px;
+        text-align:center;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .main{
+        background-color: rgb(0,0,0,0.5);
+        width: 800px;
+        margin: auto;
+    }
+
+    .form{
+        padding:10px;
+    }
+
+    #name{
+        width:100%;
+        height:100%;
+    }
+
+    #nameContainer {
+      width:770px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+         line-height:10px;
+         background-color: rgb(0,0,0,0.6);
+        margin:auto;
+        color:#ffffff;
+        padding: 15px;
+        text-align:center;
+        border-radius: 0px 0px 0px 0px;
+      
+    }
+
+    
+
+    #firstnameContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #lastnameContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #contactContainer{
+        font-size: 16px;
+        color: white;
+        background-color: rgb(0,0,0,0.6);
+    }
+
+    #emailContainer{
+        position: relative;
+        left: -1px;
+        top: -20px;
+        line-height: 40px;
+        width: 756px;
+        border-radius: 6px;
+        padding: 10px 22px;
+        font-size: 19px;
+        color: #555;
+        color: white;
+         background-color: rgb(0,0,0,0.6);
+        margin:auto;
+        border-radius: 0px 0px 0px 0px;
+    }
+    
+
+    .code{
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 95px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    #ageContainer{
+         position: relative;
+        left: -1px;
+        top: -20px;
+        line-height: 40px;
+        width: 756px;
+        border-radius: 6px;
+        padding: 10px 22px;
+        font-size: 19px;
+        color: #555;
+        color: white;
+         background-color: rgb(0,0,0,0.6);
+        margin:auto;
+        border-radius: 0px 0px 0px 0px;
+   
+    }
+
+    #cityContainer{
+        line-height: 40px;
+        font-size: 19px;
+        color: #555;
+        color: white;
+         background-color: rgb(0,0,0,0.6);
+        margin:auto;
+        width: 100%;
+    }
+   
+
+  
+
+    .option{
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 532px;
+        height: 40px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+        outline: none;
+        overflow: hidden;
+    }
+
+    .option option{
+        font-size: 16px;
+    }
+
+
+    button{
+        background-color: #3BAF9F;
+        display: block;
+        margin: 20px 0px 0px 20px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #366473;
+        padding: 14px 110px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        transition: 0.25px;
+    }
+
+    button:hover{
+        background-color: #5390F5;
+    }
+	
+	.btn{
+		border: 1px solid #fff;
+		padding: 15px 30px;
+		color: #fff;
+		text-decoration:none;
+		transition: 0.6s ease;
+	}
+	
+	.btn:hover{
+		background-color: #fff;
+		color: #000;
+		
+	}
+
+    .flexContainer {
+    display: flex;
+}
+
+.flex--justifyContent {
+    justify-content: center;
+}
+
+.flex--alignItems {
+    align-items: center;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--end {
+    align-self: flex-end;
+}
+
+.flex--start {
+    align-self: flex-start;
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+.flex--baseline {
+    align-items: baseline;
+}
+
+.flex--flex-start {
+    justify-content: flex-start;
+}
+
+.flex--flex-end {
+    justify-content: flex-end;
+}
+
+label {
+    width: 40%;
+    height: fit-content;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+}
+
+
+    
+</style>
+
+</head>
+<body>
+    <div class="regform">
+        <h1>
+ Registration Form</h1>
+</div>
+
+<div class="flexContainer flex--justifyContent flex--alignItems">
+        <main class="flexContainer flex--justifyContent flex--alignItems flex--column" id="registrationCard">
+            <div id="registrationCardHeader">
+               
+            </div>
+
+            <div id="registrationCardContent" class="flexContainer flex--justifyContent flex--alignItems flex--column">
+                <form id="registrationForm">
+                    <div id="nameContainer" class="flexContainer flex--row">
+                        <div id="firstNameContainer" class="flexContainer flex--row flex--alignItems">
+                            <label for="firstName"><strong>First Name:</strong></label>
+                            <input type="text" name="firstName" id="firstName" maxlength="20" required>
+                        </div>
+                        
+                        <div id="lastNameContainer" class="flexContainer flex--row flex--alignItems">
+                            <label for="lastName"><strong>Last Name:</strong></label>
+                            <input type="text" name="lastName" id="lastName" maxlength="20" required>
+                        </div>
+                    </div>
+                    <div id="contactContainer" class="flexContainer flex--row flex--alignItems">
+                        <label for="Phone Number" style="font-size: 25px;"><strong>Phone Number</strong></label>
+                        <input class="phone-number" type="number" name="contact" style="width: 100%; padding: 1%; margin: 2%;" required>
+                    </div>
+                    <div id="emailAgeContainer" class="flexContainer flex--column">
+                        <div id="emailContainer" class="flexContainer flex--row flex--alignItems">
+                            <label for="email" style="text-align:left; font-size: 25px;"><strong>Email</strong></label>
+                            <input type="email" name="email" id="email"  style="width: 100%; padding: 1%; margin: 2%;" required>
+                        </div>
+
+                        <div id="ageContainer" class="flexContainer flex--row flex--alignItems">
+                            <label for="age" style="text-align:left; font-size:25px;"><strong>Age</strong></label>
+                            <input type="number" name="age" id="age" min="10" max="99"  style="width: 100%; padding: 1%; margin: 2%;"  required>
+                        </div>
+                    </div>
+
+                    <div id="city">
+                        <div id="cityContainer" class="flexContainer flex--row flex--alignItems">
+                            <label for="city" style="text-align:left; font-size:25px;"><strong>City</strong></label>
+                            <select name="city" id="city" style="width: 100%; padding: 1%; margin: 2%;">
+                                <option disabled="disabled" selected="selected">--Choose Option</option>
+                                <option value="Las Pi&#241;as City">Las Pi&#241;as</option>
+                                <option value="Para&#241;aque City">Para&#241;aque </option>
+                                <option value="Caloocan City">Cavite</option>
+                                <option value="Malabon City">Pasay</option>
+                                <option value="Navotas City">Makati</option>
+                                <option value="Valenzuela City">Taguig</option>
+                                <option value="Quezon City">Manila</option>
+                                <option value="Marikina City">Navotas</option>
+                                <option value="Pasig City">Caloocan</option>
+                                <option value="Taguig City">Malabon</option>
+                                <option value="Makati City">Quezon City</option>
+                                <option value="Manila City">Manila City</option>
+                                <option value="Mandaluyong City">Valenzuela</option>
+                                <option value="San Juan City">Pateros</option>
+                                <option value="Pasay City">Pasay City</option>
+                                <option value="Muntinlupa City">Inside NCR but not in the list</option>
+                                <option value="Outside of Metro Manila">Outside NCR</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div style="width: 100%;" class="flexContainer flex--row flex--flex-end">
+                    <div class="button flexContainer">
+                        <a href="homepage.html" class="btn">Back</a>
+                    </div>
+                    <div class="flexContainer flex--flex-end">
+                        <button type="submit" id="submitRegistration" class="flex--end" onclick="SubForm();" style="margin: 0%;">Submit</button>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </body>
+    
+</html>x

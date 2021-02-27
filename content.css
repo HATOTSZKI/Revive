@@ -1,0 +1,141 @@
+
+
+article,footer, header, main, nav, section {
+  display: block;
+}
+
+html, body, h1, h2, h3, ul, li, a, p,
+article,  footer, header, main, nav, section {
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: Georgia;
+ 
+}
+
+
+body {
+ background-color: white;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: absolute;
+
+
+}
+
+
+
+.header {
+  padding:200px;
+  text-align: left;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("lights.jpg");
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed, fixed;
+  font-size: 30px;
+}
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 17px 20px 20px 20px;
+  padding-top: 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav :hover {
+  background-color: #663a82;
+  color: white;
+}
+
+.topnav .active {
+  background-color: #663a82;
+  color: white;
+}
+
+
+
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.bottom-left {
+  position: absolute;
+  top: 30%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  
+}
+
+.box{
+  width:1509px;
+  height:400px;
+  color: white;
+  margin:100px auto;
+  margin-top: 450px;
+  margin-left:-10px;
+  background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("city.jpg");
+  background-size:cover;
+  text-align:center;
+  font-size: 35px;
+}
+
+footer {
+  clear: both;
+  background-color: #3c1361;
+  color: white;
+  padding: 50px;
+  margin-top: 700px;
+  font-size: 12px;
+  height: 30px;
+  width: 1400px;
+  margin-left:-5px;
+  text-align:center;
+  
+
+}
+
+.button{
+		position: absolute;
+		top: 62%;
+margin-left: 1050px;
+		transform:translate(-50%, -50%);
+		margin-top: 3825px;
+		
+	}
+	
+	.btn{
+		border: 1px solid #fff;
+		padding: 15px 30px;
+		color: #fff;
+		text-decoration:none;
+		transition: 0.6s ease;
+	}
+	
+	.btn:hover{
+		background-color: #fff;
+		color: #000;
+		
+	}
+	
+	
